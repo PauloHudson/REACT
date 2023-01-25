@@ -41,7 +41,8 @@ export default class UserCrud extends Component {
                 this.setState({ user: initialState.user, list })
             })
     }
-
+//removendo da lista e estou adicionando
+//só que na primira posíção usando o unshift...
     getUpdatedList(user, add = true) {
         const list = this.state.list.filter(u => u.id !== user.id)
         if(add) list.unshift(user)
